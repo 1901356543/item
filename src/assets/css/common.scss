@@ -1,0 +1,104 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+input, textarea{
+  color:$active;
+  appearance: none;
+  outline: none;
+  -webkit-appearance: none;
+  border: 0;
+}
+
+input::placeholder, textarea::placeholder{
+  color: $color1 ;
+}
+img {
+  border: none;
+}
+a {
+  text-decoration: none;
+  color: $active;
+}
+
+a:link, a:visited {
+}
+
+a:hover {
+}
+
+a, a:focus, button, input {
+  outline: none;
+  font-family: inherit;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+html {
+  overflow-y: auto;
+}
+body, html, #app {
+  font-family: "PingFang SC", "Microsoft Yahei", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  user-select: none;
+  background: $white;
+  width: 100%;
+  height: 100%;
+}
+#app{
+  font-family: "PingFang SC", "Microsoft Yahei", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  user-select: none;
+  background: $bg;
+  width: 100%;
+}
+
+.scroll_content::-webkit-scrollbar {
+  width:0px;
+  height:0px;
+}
+.coloractive{
+  color: $active;
+}
+.up{
+  color:$up !important;
+}
+.down{
+  color: $down !important;
+}
+.buybg{
+  background:$down !important;
+}
+.sellbg{
+  background:$up !important;
+
+}
+.btn { //公共按钮 ，浮动在底部  
+  width: 90%;
+ margin: 0 auto;
+ margin: 0 5%;
+ position: fixed;  left: 0;
+ bottom: 20px;
+ display: block;
+ line-height: 44px;
+ text-align: center;
+ background: $blue;
+ border-radius: 22px;
+ color: $white;
+ height: 44px;
+}
+.btn-submit{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
